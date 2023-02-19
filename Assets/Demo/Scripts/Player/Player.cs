@@ -3,49 +3,51 @@ using System.Collections;
 using System.Collections.Generic;
 using Survival.Demo;
 using UnityEngine;
-
-public class Player : MonoBehaviour
+namespace Survival.Demo
 {
-    public static Player Instance;
-    public FloatingJoystick joystick;
-    public PlayerCollider coll;
-    public Transform tr;
-    public AnimationController anim;
-    public RandomAudioPlayer audioPlayer;
-
-    private void Awake()
+    public class Player : MonoBehaviour
     {
+        public static Player Instance;
+        public FloatingJoystick joystick;
+        public PlayerCollider coll;
+        public Transform tr;
+        public AnimationController anim;
+        public RandomAudioPlayer audioPlayer;
 
-        if (Instance != null)
+        private void Awake()
         {
-            Destroy(this);
-            return;
+
+            if (Instance != null)
+            {
+                Destroy(this);
+                return;
+            }
+            Instance = this;
+            if (coll == null)
+            {
+                coll = GetComponentInChildren<PlayerCollider>();
+            }
+            if (joystick == null)
+            {
+                joystick = FindObjectOfType<FloatingJoystick>();
+            }
+            if (anim == null)
+            {
+                anim = GetComponentInChildren<AnimationController>();
+            }
+
+            tr = transform;
         }
-        Instance = this;
-        if (coll == null)
+        private void Start()
         {
-            coll = GetComponentInChildren<PlayerCollider>();
+            coll.enemyCollision += collide;
         }
-        if (joystick == null)
+        private void collide(bool collided)
         {
-            joystick = FindObjectOfType<FloatingJoystick>();
-        }
-        if (anim == null)
-        {
-            anim = GetComponentInChildren<AnimationController>();
+            audioPlayer.playRandomClip();
+            Debug.Log("Collision detected!");
         }
 
-        tr = transform;
+
     }
-    private void Start()
-    {
-        coll.enemyCollision += collide;
-    }
-    private void collide(bool collided)
-    {
-        audioPlayer.playRandomClip();
-        Debug.Log("Collision detected!");
-    }
-
-
 }
