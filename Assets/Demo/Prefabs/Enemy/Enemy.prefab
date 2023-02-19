@@ -1019,7 +1019,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: b5f71c859f9f9bf41badda8a4650082c, type: 3}
+  m_Mesh: {fileID: 4300000, guid: d427116b67a0931448938c4fec1f757d, type: 3}
   m_Bones:
   - {fileID: 7751819946794218212}
   - {fileID: 7751819947272944734}
@@ -1379,7 +1379,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300010, guid: b5f71c859f9f9bf41badda8a4650082c, type: 3}
+  m_Mesh: {fileID: 4300010, guid: d427116b67a0931448938c4fec1f757d, type: 3}
   m_Bones:
   - {fileID: 7751819946794218212}
   - {fileID: 7751819947272944734}
@@ -1513,7 +1513,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300002, guid: b5f71c859f9f9bf41badda8a4650082c, type: 3}
+  m_Mesh: {fileID: 4300002, guid: d427116b67a0931448938c4fec1f757d, type: 3}
   m_Bones:
   - {fileID: 7751819946794218212}
   - {fileID: 7751819947272944734}
@@ -1775,7 +1775,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300006, guid: b5f71c859f9f9bf41badda8a4650082c, type: 3}
+  m_Mesh: {fileID: 4300006, guid: d427116b67a0931448938c4fec1f757d, type: 3}
   m_Bones:
   - {fileID: 7751819946794218212}
   - {fileID: 7751819947272944734}
@@ -2385,7 +2385,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300008, guid: b5f71c859f9f9bf41badda8a4650082c, type: 3}
+  m_Mesh: {fileID: 4300008, guid: d427116b67a0931448938c4fec1f757d, type: 3}
   m_Bones:
   - {fileID: 7751819946794218212}
   - {fileID: 7751819947272944734}
@@ -2648,7 +2648,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300004, guid: b5f71c859f9f9bf41badda8a4650082c, type: 3}
+  m_Mesh: {fileID: 4300004, guid: d427116b67a0931448938c4fec1f757d, type: 3}
   m_Bones:
   - {fileID: 7751819946794218212}
   - {fileID: 7751819947272944734}

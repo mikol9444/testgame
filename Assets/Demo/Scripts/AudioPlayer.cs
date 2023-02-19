@@ -2,26 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-public class AudioPlayer : MonoBehaviour
+namespace Survival.Demo
 {
-    private AudioSource audioSource;
-    private string audioTimeKey = "AudioTime";
-
-    private void Start()
+    public class AudioPlayer : MonoBehaviour
     {
-        audioSource = GetComponent<AudioSource>();
-        if (PlayerPrefs.HasKey(audioTimeKey))
+        private AudioSource audioSource;
+        private string audioTimeKey = "AudioTime";
+
+        private void Start()
         {
-            audioSource.time = PlayerPrefs.GetFloat(audioTimeKey);
+            audioSource = GetComponent<AudioSource>();
+            if (PlayerPrefs.HasKey(audioTimeKey))
+            {
+                audioSource.time = PlayerPrefs.GetFloat(audioTimeKey);
+            }
+            audioSource.Play();
         }
-        audioSource.Play();
+
+        private void OnApplicationQuit()
+        {
+            PlayerPrefs.SetFloat(audioTimeKey, audioSource.time);
+        }
+
+
+
     }
-
-    private void OnApplicationQuit()
-    {
-        PlayerPrefs.SetFloat(audioTimeKey, audioSource.time);
-    }
-
-
-
 }

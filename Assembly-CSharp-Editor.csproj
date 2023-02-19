@@ -36,10 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ThirdParty\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
-     <Compile Include="Assets\ThirdParty\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
-     <Compile Include="Assets\ThirdParty\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs" />
-     <Compile Include="Assets\ThirdParty\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
+     <Compile Include="Assets\ThirdParty\Joystick\Editor\VariableJoystickEditor.cs" />
+     <Compile Include="Assets\ThirdParty\Joystick\Editor\FloatingJoystickEditor.cs" />
+     <Compile Include="Assets\ThirdParty\Joystick\Editor\JoystickEditor.cs" />
+     <Compile Include="Assets\ThirdParty\Joystick\Editor\DynamicJoystickEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\_UNITY\Editor\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -705,13 +705,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{c8ff7169-e622-b7c8-dae7-8832d57a68fb}</Project>
-      <Name>Assembly-CSharp</Name>
+    <ProjectReference Include="Flocking3D.csproj">
+      <Project>{0796390a-5edb-e0a6-1a2d-4a31923124d7}</Project>
+      <Name>Flocking3D</Name>
     </ProjectReference>
-    <ProjectReference Include="main.csproj">
-      <Project>{b29b7e0d-2e20-f7ad-402f-c2362f67a6a6}</Project>
-      <Name>main</Name>
+    <ProjectReference Include="joystick.csproj">
+      <Project>{06bfdf03-106f-c07d-a4bf-20c8c3917ee5}</Project>
+      <Name>joystick</Name>
+    </ProjectReference>
+    <ProjectReference Include="demo.csproj">
+      <Project>{271c8427-a6fd-a1db-6dba-97473aec7434}</Project>
+      <Name>demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
